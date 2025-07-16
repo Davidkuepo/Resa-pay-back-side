@@ -3,5 +3,5 @@ services:
     name: laravel-api
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./Resa-pay-back-side/Dockerfile
     healthCheckPath: /
