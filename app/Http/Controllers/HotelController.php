@@ -50,6 +50,7 @@ class HotelController extends Controller
     public function show($id)
     {
         $baseUrl = url('/images');
+        
         $hotels = [
             1 => [
                 'id' => 1,
