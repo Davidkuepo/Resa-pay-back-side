@@ -9,7 +9,7 @@ class HotelController extends Controller
     public function index()
     {
         $baseUrl = url('/images');
-    
+
         $hotels = [
             [
                 "id" => 1,
