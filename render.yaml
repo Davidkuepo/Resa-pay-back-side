@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: resa-pay-backend
+    env: docker
+    plan: free
+    branch: main  # ou la branche où est ton code
+    rootDir: ./Resa-pay-back-side  # répertoire contenant ton projet Laravel
+    dockerfilePath: ./Resa-pay-back-side/Dockerfile
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_DEBUG
+        value: false
+      - key: APP_URL
+        value: https://resa-pay-backend.onrender.com
